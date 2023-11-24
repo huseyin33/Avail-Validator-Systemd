@@ -58,7 +58,7 @@ User=root
 Type=simple
 Restart=always
 RestartSec=120
-ExecStart=/root/avail-node/amd64-ubuntu-2204-data-avail.tar.gz --base-path /root/avail-node/data --chain /root/avail-node/chainspec.raw.json --port 30333 --validator --name "XXXX"
+ExecStart=/root/avail-node/amd64-ubuntu-2204-data-avail --base-path /root/avail-node/data --chain /root/avail-node/chainspec.raw.json --port 30333 --validator --name "XXXX"
 
 [Install]
 WantedBy=multi-user.target
