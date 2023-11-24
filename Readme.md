@@ -36,14 +36,14 @@ cd /root/avail-node/
 # Check correct version from this link and wget it!
 'https://github.com/availproject/avail/releases'
 ```
-wget https://github.com/availproject/avail/releases/download/v1.7.0/data-avail-linux-amd64.tar.gz
+wget https://github.com/availproject/avail/releases/download/v1.8.0.2/amd64-ubuntu-2204-data-avail.tar.gz
 ```
 ```
-wget https://kate.avail.tools/chainspec.raw.json
+wget https://goldberg.avail.tools/chainspec.raw.json
 ```
 # Extract the file
 ```
-tar xvzf data-avail-linux-amd64.tar.gz
+tar xvzf amd64-ubuntu-2204-data-avail.tar.gz
 ```
 # Change ''XXXX'' section and add your validator name. For example: ''Peertodevs''
 ```
@@ -58,7 +58,7 @@ User=root
 Type=simple
 Restart=always
 RestartSec=120
-ExecStart=/root/avail-node/data-avail-linux-amd64 --base-path /root/avail-node/data --chain /root/avail-node/chainspec.raw.json --port 30333 --validator --name "XXXX"
+ExecStart=/root/avail-node/amd64-ubuntu-2204-data-avail.tar.gz --base-path /root/avail-node/data --chain /root/avail-node/chainspec.raw.json --port 30333 --validator --name "XXXX"
 
 [Install]
 WantedBy=multi-user.target
